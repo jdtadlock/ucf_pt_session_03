@@ -16,7 +16,7 @@
     "start": "node server.js",
     "dev": "concurrently \"nodemon server.js\" \"cd ./client && npm start\"",
     "build": "cd ./client && npm run build",
-    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+    "heroku-postbuild": "cd client && npm --production=false && npm run build"
   },
   "keywords": [],
   "author": "",
