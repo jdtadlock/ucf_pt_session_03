@@ -1,0 +1,22 @@
+{
+  "name": "03_session_4_22_18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.15"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "concurrently \"nodemon server.js\" \"cd ./client && npm start\"",
+    "build": "cd ./client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
